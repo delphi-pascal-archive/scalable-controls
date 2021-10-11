@@ -1,0 +1,46 @@
+object TestForm: TTestForm
+  Left = 473
+  Top = 178
+  Width = 483
+  Height = 338
+  AutoScroll = True
+  Color = clMoneyGreen
+  DragKind = dkDock
+  DragMode = dmAutomatic
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Arial'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnEndDock = FormEndDock
+  OnHide = FormHide
+  OnResize = FormResize
+  OnShow = FormShow
+  OnStartDock = FormStartDock
+  PixelsPerInch = 96
+  TextHeight = 15
+  object Scroller: TEdit
+    Left = 464
+    Top = 584
+    Width = 58
+    Height = 24
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'Scroller'
+    Visible = False
+  end
+  object DataSource1: TDataSource
+    OnDataChange = DataSource1DataChange
+    Left = 38
+    Top = 9
+  end
+end
